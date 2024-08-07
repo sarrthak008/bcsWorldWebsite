@@ -1,0 +1,257 @@
+
+@font-face {
+    font-family: gilyroy;
+    src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: areBar;
+    src: url(../fonts/Aerovias\ Brasil\ NF.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilyroy;
+}
+
+body {
+    background-color: #ffffff;
+
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: rgb(32, 32, 32);
+    flex-direction: column;
+
+
+}
+
+#container #signup {
+    height: 100vh;
+    width: 60%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#signup form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    width: 50vw;
+    display: block;
+
+}
+
+form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(147, 144, 144);
+    white-space: nowrap;
+
+}
+.back{
+    font-family: areBar;
+    font-size: 60px;
+    color:#6c90f4;
+}
+
+form input,
+form select {
+    width: 100%;
+    border: none;
+    color: black;
+    padding: 10px;
+    background-color: #c4d2fabe;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border-bottom:3px solid #376af5;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+}
+form p{
+    margin-top: 40px;
+}
+
+#btn {
+    text-align: center;
+    padding:5px;
+    font-weight: 700;
+    background-color: #6c90f4;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 3px;
+    color: whitesmoke;
+}
+.login-images{
+    height: 30px;
+    margin: 7px;
+    font-size: larger;
+
+}
+
+.images-container i{
+    font-size: 30px;
+    color: rgb(147, 144, 144);
+
+}
+.small-container {
+    display: flex;
+    gap: 2vw;
+    justify-content: space-between;
+ 
+}
+
+#_userName,
+#_userName1,
+#_userGender,
+#_userAge {
+width: 80%;
+}
+
+.question {
+    color: black;
+    margin: 7px 0px;
+    color: rgb(112, 112, 112);
+
+
+}
+.login-link{
+    color: #1f7964;
+
+}
+
+#container #imgdiv {
+    display: none;
+    width: 40%;
+    height: 100%;
+}
+
+
+#imgdiv img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    position: relative;
+    top:0;
+}
+.notification{
+    padding:2.1vh 2vw;
+    background-color: #5091f9;
+    position: absolute;
+    display: none;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+    color: #f5f5f5;
+    font-size: 900;
+    white-space: nowrap;
+}
+
+
+@media (min-width: 768px) {
+    #container {
+        flex-direction: row;
+    }
+
+    #container #signup {
+        height: 100vh;
+        width: 70%;
+    }
+
+    #signup form {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    form h2 {
+        font-size: 2.5vw;
+    }
+
+    form input,
+    form select {
+        font-size: 1.2vw;
+    }
+
+    #btn {
+        max-width: 10vw;
+    }
+
+    #container #imgdiv {
+        display: block;
+        height: 100vh;
+        width: 30vw;
+    }
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+@media (max-width: 767px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #container #signup {
+        width: 100%;
+    }
+
+    #signup form {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    form h2 {
+        font-size: 2em;
+    }
+
+    form input,
+    form select {
+        font-size: 1em;
+    }
+
+    #btn {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .signup{
+       font-size:9vw;
+    }
+    .back{
+        font-size: 9vw;
+    }
+    #btn{
+        font-size: 6vw;
+    }
+}
+
