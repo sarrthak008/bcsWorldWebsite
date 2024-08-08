@@ -15,7 +15,7 @@ loginButton.addEventListener("click",()=>{
 
 
 async function  checkUser(mobileNumber,password){
-    let loginResult
+      notification("loding....",20000)
    await  fetch(`https://bcsworld.onrender.com/login?password=${password}&mobilenumber=${mobileNumber}`).then((responce)=>{
          return responce.json()
     }).then((result)=>{

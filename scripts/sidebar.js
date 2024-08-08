@@ -18,7 +18,8 @@ const addSideBar = () =>{
                     <li><a href="#">Say Thanks <i class="ri-chat-heart-fill"></i></a></li>
                 </ul>
             </div>
-          <span class="logout">Log out <i class="ri-logout-box-r-line"></i></span>
+           <span class="logout">Log out <i class="ri-logout-box-r-line"></i></span>
+           <span class="close" id="close"><i class="ri-close-fill"></i></span>
         </div>`
 
 }
@@ -30,6 +31,8 @@ document.querySelector(".logout").addEventListener("click",()=>{
      window.location.assign("../index.html")
 })
 }
+
+
 
 //check user is avaliale or not if not show error..
 
@@ -43,6 +46,24 @@ if(!userInfo){
 
 
 
+const openCloseSideBar = () =>{
+    let openBtn = document.querySelector(".menu")
+     openBtn.addEventListener("click",()=>{
+        sideBar.style.left=`${0}px`;
+     })
+
+     let closeBtn =  document.querySelector("#close").addEventListener("click",()=>{
+        sideBar.style.left=`${-100}%`
+     })
+  
+}
+
+
+openCloseSideBar()
+
+
+
+
 // send notification...
 function notification(message, time) {
     let notification = document.querySelector('.notification')
@@ -52,3 +73,4 @@ function notification(message, time) {
         notification.style.display = "none"
     }, time)
 }
+
