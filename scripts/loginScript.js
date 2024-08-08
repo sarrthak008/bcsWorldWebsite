@@ -24,6 +24,7 @@ async function  checkUser(mobileNumber,password){
           }else{
             notification(`hey ${result.user.name} welcome back...`,2000)
             localStorage.setItem('user',JSON.stringify(result))
+            window.location.assign("./pages/notes.html")
           }
      
     }).catch((error)=>{
