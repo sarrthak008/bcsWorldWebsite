@@ -13,7 +13,7 @@ const addSideBar = () =>{
                     <li><a href="#">Books <i class="ri-git-repository-fill"></i></a></li>
                     <li><a href="#">Notes <i class="ri-booklet-fill"></i></a></li>
                     <li><a href="#">Video <i class="ri-video-fill"></i></a></li>
-                    <li><a href="#">Papers <i class="ri-article-fill"></i></a></li>
+                    <li><a href="papers.html">Papers <i class="ri-article-fill"></i></a></li>
                     <li><a href="#">Coding Notes <i class="ri-terminal-box-fill"></i></a></li>
                     <li><a href="#">Say Thanks <i class="ri-chat-heart-fill"></i></a></li>
                 </ul>
