@@ -71,8 +71,7 @@ let currentDate = new Date().getDate()
 
 }
 
-
 window.addEventListener('load',()=>{
     autologIn()
-    
+
 })

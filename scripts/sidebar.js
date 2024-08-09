@@ -10,12 +10,12 @@ const addSideBar = () =>{
             <div id="options">
                 <!--add sidebar options-->
                 <ul>
-                    <li><a href="#">Books <i class="ri-git-repository-fill"></i></a></li>
-                    <li><a href="#">Notes <i class="ri-booklet-fill"></i></a></li>
-                    <li><a href="#">Video <i class="ri-video-fill"></i></a></li>
+                    <li><a href="books.html">Books <i class="ri-git-repository-fill"></i></a></li>
+                    <li><a href="notes.html">Notes <i class="ri-booklet-fill"></i></a></li>
+                    <li><a href="videos.html">Video <i class="ri-video-fill"></i></a></li>
                     <li><a href="papers.html">Papers <i class="ri-article-fill"></i></a></li>
-                    <li><a href="#">Coding Notes <i class="ri-terminal-box-fill"></i></a></li>
-                    <li><a href="#">Say Thanks <i class="ri-chat-heart-fill"></i></a></li>
+                    <li><a href="codingNotes.html">Coding Notes <i class="ri-terminal-box-fill"></i></a></li>
+                    <li><a href="thanks.html">Say Thanks <i class="ri-chat-heart-fill"></i></a></li>
                 </ul>
             </div>
            <span class="logout">Log out <i class="ri-logout-box-r-line"></i></span>
