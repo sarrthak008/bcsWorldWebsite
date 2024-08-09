@@ -8,6 +8,7 @@ loginButton.addEventListener("click",()=>{
      let password = document.querySelector("#_userpass").value
         if(mobileNumber.length == 10 && password){
              checkUser(mobileNumber,password)
+             autologIn(mobileNumber,password)
         }else{
             notification("please check details",2000)
         }
@@ -23,6 +24,7 @@ async function  checkUser(mobileNumber,password){
             notification("not found your account..",2000)
           }else{
             notification(`hey ${result.user.name} welcome back...`,2000)
+            saveLoginTime()
             localStorage.setItem('user',JSON.stringify(result))
             window.location.assign("./pages/notes.html")
           }
@@ -33,7 +35,13 @@ async function  checkUser(mobileNumber,password){
 }
 
 
+const saveLoginTime =()=>{
 
+let currentDate = new Date();
+let date = currentDate.getDate()
+   localStorage.setItem('date',date)
+  
+}
 
 ///notification function
 
@@ -47,3 +55,26 @@ function notification(message, time) {
 }
 
 //https://bcsworld.onrender.com/login?password=sarthak680&mobilenumber=8459360294
+
+let user = JSON.parse(localStorage.getItem('user'))
+let storedate = parseInt(localStorage.getItem('date'))
+
+const autologIn=(mno,pass)=>{
+
+let currentDate = new Date().getDate()
+
+console.log(currentDate)
+
+ if(user){
+
+      if(user.user.mobileNumber==mno && user.user.password==pass){
+            let  sessionTime = Math.abs(currentDate-storedate)
+               if(sessionTime<=2){
+                window.location.assign("./pages/notes.html")
+               }
+      }
+ }
+
+}
+
+autologIn('8459360294','123321')

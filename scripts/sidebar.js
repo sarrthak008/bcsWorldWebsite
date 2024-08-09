@@ -28,6 +28,7 @@ const addSideBar = () =>{
 const logout=()=>{
 document.querySelector(".logout").addEventListener("click",()=>{
      localStorage.removeItem('user')
+     localStorage.removeItem('date')
      window.location.assign("../index.html")
 })
 }

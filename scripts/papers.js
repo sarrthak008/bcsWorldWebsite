@@ -71,8 +71,14 @@ const LoadBcaPapers =()=>{
        }     
 }
 
-LoadBcsPapers()
-LoadBcaPapers()
+
+if(!userInfo){
+    notification('FUCK YOU LOGIN FIRST....',10000)
+  }else{
+    LoadBcsPapers()
+    LoadBcaPapers()
+  }
+  
 
 const notify =(meaage)=>{
   notification(meaage,1500)
