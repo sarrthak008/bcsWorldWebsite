@@ -39,7 +39,7 @@ html {
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
-    transition: all 1s linear;
+    transition: all 0.4s linear;
     z-index: 1;
 }
 
