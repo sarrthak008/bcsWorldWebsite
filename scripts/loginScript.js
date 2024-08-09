@@ -25,7 +25,7 @@ async function  checkUser(mobileNumber,password){
             notification(`hey ${result.user.name} welcome back...`,2000)
             saveLoginTime()
             localStorage.setItem('user',JSON.stringify(result))
-            window.location.assign("./pages/notes.html")
+            window.location.assign("./pages/books.html")
           }
      
     }).catch((error)=>{
@@ -65,7 +65,7 @@ let currentDate = new Date().getDate()
  if(user){
   let  sessionTime = Math.abs(currentDate-storedate)
                if(sessionTime<=3){
-                window.location.assign("./pages/notes.html")
+                window.location.assign("./pages/books.html")
             }
  }
 
