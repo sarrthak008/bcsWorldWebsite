@@ -11,6 +11,7 @@ e.preventDefault()
      let password = document.querySelector("#_userPass").value
          if(mobileNumber.length ==10 && password.length >=6 && name && email){
              saveUser({name,mobileNumber,email,password})
+             notification('It take some time please wait...',10000)
          }else{
              notification("please check filed values",2000)
          }

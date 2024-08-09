@@ -8,7 +8,6 @@ loginButton.addEventListener("click",()=>{
      let password = document.querySelector("#_userpass").value
         if(mobileNumber.length == 10 && password){
              checkUser(mobileNumber,password)
-             autologIn(mobileNumber,password)
         }else{
             notification("please check details",2000)
         }
@@ -59,22 +58,21 @@ function notification(message, time) {
 let user = JSON.parse(localStorage.getItem('user'))
 let storedate = parseInt(localStorage.getItem('date'))
 
-const autologIn=(mno,pass)=>{
+const autologIn=()=>{
 
 let currentDate = new Date().getDate()
 
-console.log(currentDate)
-
  if(user){
-
-      if(user.user.mobileNumber==mno && user.user.password==pass){
-            let  sessionTime = Math.abs(currentDate-storedate)
-               if(sessionTime<=2){
+  let  sessionTime = Math.abs(currentDate-storedate)
+               if(sessionTime<=3){
                 window.location.assign("./pages/notes.html")
-               }
-      }
+            }
  }
 
 }
 
-autologIn('8459360294','123321')
+
+window.addEventListener('load',()=>{
+    autologIn()
+    
+})
