@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/codingNotes.css">
     
     <title>NOTES | BCS WORLd</title>
 </head>
@@ -21,7 +22,7 @@
                 <span class="github"><i class="ri-github-fill"></i></span>
              </nav>
 
-               
+               <h1 class="notes-h1">All Languages Coding Notes </h1>
 
 
         </div>
