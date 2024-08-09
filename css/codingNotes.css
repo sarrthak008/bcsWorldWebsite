@@ -1,3 +1,61 @@
+
+@font-face {
+    font-family: gilyroy;
+    src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+
 .notes-h1{
     text-align: center;
+    font-weight: 900;
+}
+
+
+
+.notes-continer{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#fist-notes{
+    height: 40vh;
+    width: 200px;
+    background-color: rgb(202, 202, 202);
+    margin-left: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    
+    align-items: center;
+    
+}
+#fist-notes img {
+    height: 16vh;
+    width: 10vw;
+    filter: drop-shadow(10px 10px 20px rgb(75, 154, 191));
+    
+    object-fit: fill;
+}
+.lang-name{
+    
+    font-size: 2.5vw; 
+     font-family: "Roboto", sans-serif;
+
+}
+.btn{
+    height: 6vh;
+    width: 10vw;
+    
+    border: none;
+    
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color:#5f95f8 ;
+    font-size: 1.5vw;
 }
