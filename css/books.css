@@ -1,0 +1,58 @@
+#right h1{
+    text-align: center;
+    font-size: 1.7em;
+}
+
+#book-container{
+    margin-top: 4vh;
+    height: 45vh;
+    width: 100vw;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#book-container::-webkit-scrollbar{
+    display: none;
+}
+
+.iteam{
+    margin-top: 2vh;
+    height: 90%;
+    border-radius: 9px;
+    width: 200px;
+    margin-left:30px;
+    overflow: hidden;
+    background-color: #cccdce;
+    display: inline-block ;
+}
+
+
+.iteam .img-div{
+    height:60%;
+    width: 100%;
+}
+
+.img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    filter: drop-shadow(10px 10px 20px rgb(75, 154, 191));
+}
+
+
+.btn{
+   display: block;
+   padding: 1.1vh 20px;
+   background-color: #5f95f8;
+   width: 70%;
+   margin:0 auto;
+   text-align: center;
+   color: #f5f5f5;
+   font-size: 1.2em; 
+   letter-spacing: 4px;  
+   text-decoration: none;
+   font-weight: 700; 
+   border-radius: 4px;
+   margin-top: 3vh;
+}
