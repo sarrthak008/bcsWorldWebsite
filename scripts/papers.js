@@ -4,9 +4,12 @@ const Bcs ={
         {
             url:"https://drive.google.com/file/d/1-Uf_VphA-ExrZ1Ub-gq63k-MaP4xOnWx/view?usp=drivesdk",
             info:"FY to TY  all papers"
+        },
+        {
+            url:"https://drive.google.com/file/d/12W1obfjglQXnhy7nGBhBnKs9gvd5fFtQ/view?usp=drivesdk",
+            info:"DS I paper solution"
         }
 
-        //add more papers like ul and info format
 
      ]
 }
@@ -35,6 +38,7 @@ const LoadBcsPapers =()=>{
                        <div class="iteam-img">
                           <img src="../images/questionpaper.png" alt="" onclick="notify('${paper.info}')">
                        </div>
+                       <p>${paper.info}</p>
                        <a href="${paper.url}" download class="downlaodBtn" target="_blank">view</a>
                    </div>`
            })
@@ -59,6 +63,7 @@ const LoadBcaPapers =()=>{
                        <div class="iteam-img">
                           <img src="../images/questionpaper.png" alt="" onclick="notify('${paper.info}')">
                        </div>
+                       <p>${paper.info}</p>
                        <a href="${paper.url}" download class="downlaodBtn" target="_blank">view</a>
                    </div>`
            })
