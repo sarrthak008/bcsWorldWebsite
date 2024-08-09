@@ -4,13 +4,13 @@ let cardcontiner = document.querySelector(".notes-continer")
 const language ={
     notes:[
         {
-            url:"https://drive.google.com/file/d/1-mNjSAZspxR-Kxkgg1nf97w39zmCs5oj/view?usp=drivesdk",
+            url:"https://drive.google.com/file/d/10dKK8BE_BzJDATGKp_wkkNtlhblBXaBC/view?usp=drive_link",
             name:"java",
             imgurl:"../images/javalogonoties.png"
 
         },
         {
-            url:"gogal",
+            url:"https://drive.google.com/file/d/11EfebczebyMbKmeezgQrfQsbCryHGKdx/view?usp=drive_link",
             name:"c",
             imgurl:"../images/clogo.png"
         },
@@ -21,7 +21,7 @@ const language ={
 
         },
         {
-            url:"gogal",
+            url:"https://drive.google.com/file/d/115Z4ldRQYom9kVW4ZxiDQgQ2_OOciRjs/view?usp=drive_link",
             name:"c++",
             imgurl:"../images/c++ logo.png"
 
