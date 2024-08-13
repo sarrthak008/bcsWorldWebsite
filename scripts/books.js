@@ -2,10 +2,10 @@ let container= document.querySelector("#book-container")
 
 let bcsBooksLink =[
       {
-        url:"https://www.google.com/"
+        url:"https://drive.google.com/drive/folders/1303g6eyI0rDmJRLwwBZiSWu_iUtvWEtX"
       },
       {
-        url:""
+        url:"https://drive.google.com/drive/folders/13066u6ZioDa8EcS_vpAVrZsvUO6mQ7Sy"
       },
       {
         url:"https://drive.google.com/drive/folders/11rm61G3RLnchYQUZZWNzuCHZ_hQXSlU_"
