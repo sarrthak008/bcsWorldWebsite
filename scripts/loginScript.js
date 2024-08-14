@@ -64,7 +64,7 @@ let currentDate = new Date().getDate()
 
  if(user){
   let  sessionTime = Math.abs(currentDate-storedate)
-               if(sessionTime<=3){
+               if(sessionTime<=30){
                 window.location.assign("./pages/books.html")
             }
  }
