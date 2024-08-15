@@ -1,5 +1,8 @@
 let container= document.querySelector("#book-container")
 
+let bcaBookContainer = document.querySelector('#bca-book-container')
+
+
 let bcsBooksLink =[
       {
         url:"https://drive.google.com/drive/folders/1303g6eyI0rDmJRLwwBZiSWu_iUtvWEtX"
@@ -22,6 +25,27 @@ let bcsBooksLink =[
 
 ]
 
+let bcaBookLinks=[
+  {
+    url:''
+  },
+  {
+    url:''
+  },
+  {
+    url:''
+  },
+  {
+    url:''
+  },
+  {
+    url:''
+  },
+  {
+    url:''
+  }
+]
+
 const loadBook =()=>{
      bcsBooksLink.forEach((booklink,index)=>{
         //console.log(booklink)
@@ -35,4 +59,20 @@ const loadBook =()=>{
      })
 }
 
+
+
+const loadbcaBook =()=>{
+  bcaBookLinks.forEach((booklink,index)=>{
+     //console.log(booklink)
+      bcaBookContainer.innerHTML +=`<div class="iteam">
+                      <div class="img-div">
+                         <img src="../images/book.png" alt="">
+                      </div>
+                      <a href="${booklink.url}" class="btn">semester ${index+1}</a>
+                 </div>
+      `
+  })
+}
+
 loadBook()
+loadbcaBook()
