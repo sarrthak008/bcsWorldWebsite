@@ -2,6 +2,16 @@
 let sideBar = document.querySelector("#left")
 let userInfo = JSON.parse(localStorage.getItem('user'))
 
+let totalUsers = 1
+
+fetch(`https://bcsworld.onrender.com/all`).then((res)=>{
+    return res.json()
+}).then((resu)=>{
+    
+   totalUsers= resu
+  document.querySelector('.github').innerHTML=`<i class="ri-heart-pulse-fill"></i> ${totalUsers}`
+})
+
 const addSideBar = () =>{
 
   sideBar.innerHTML=`<div id="info">
@@ -32,6 +42,13 @@ document.querySelector(".logout").addEventListener("click",()=>{
      window.location.assign("../index.html")
 })
 }
+
+fetch(`https://bcsworld.onrender.com/all`).then((res)=>{
+    return res.json()
+}).then((resu)=>{
+   totalUsers= resu
+   console.log(totalUsers)
+})
 
 
 
@@ -74,4 +91,3 @@ function notification(message, time) {
         notification.style.display = "none"
     }, time)
 }
-
