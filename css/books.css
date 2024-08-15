@@ -25,6 +25,7 @@
     overflow: hidden;
     background-color: #cccdce;
     display: inline-block ;
+    box-shadow: 10px 10px 10px #9b9999;
 }
 
 
