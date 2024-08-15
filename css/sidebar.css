@@ -135,8 +135,21 @@ html {
 }
 
 .github {
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
+    color: #f05199;
+}
+.github i{
+    animation: beat 1s ease-in-out infinite;
+}
+
+@keyframes beat {
+     0%{
+        font-size: 20px;
+     }
+     100%{
+       font-size: 23px;
+     }
 }
 
 #right::-webkit-scrollbar {
