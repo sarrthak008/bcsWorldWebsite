@@ -3,7 +3,7 @@ let videos=[
     {
       url:'https://drive.google.com/file/d/1-5jaK-bKdwALGrtJtqCQQn3DrO3O9ewO/view?usp=drivesdk',
       tittle:'Opearating System',
-      info:'learn more about opearating system',
+      info:'learn more about operating system',
       imgSrc:'opearating-stystem.png'
     },
 
