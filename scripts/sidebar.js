@@ -4,7 +4,7 @@ let userInfo = JSON.parse(localStorage.getItem('user'))
 
 let totalUsers = 1
 
-fetch(`https://bcs-world-6aen.vercel.app//all`).then((res)=>{
+fetch(`https://bcs-world-6aen.vercel.app/all`).then((res)=>{
     return res.json()
 }).then((resu)=>{
     
