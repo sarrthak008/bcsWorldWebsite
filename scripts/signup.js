@@ -21,7 +21,7 @@ e.preventDefault()
 
 const saveUser =(user)=>{
     let {name,mobileNumber,email,password} = user
-         fetch(`https://bcsworld.onrender.com/signup?password=${password}&mobilenumber=${mobileNumber}&name=${name}&email=${email}`).then((respone)=>{
+         fetch(`https://bcs-world-6aen.vercel.app/signup?password=${password}&mobilenumber=${mobileNumber}&name=${name}&email=${email}`).then((respone)=>{
             return respone.text()
          }).then((result)=>{
               notification(result,2000)

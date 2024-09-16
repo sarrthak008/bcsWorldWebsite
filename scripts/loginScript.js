@@ -16,7 +16,7 @@ loginButton.addEventListener("click",()=>{
 
 async function  checkUser(mobileNumber,password){
       notification("loding....",20000)
-   await  fetch(`https://bcsworld.onrender.com/login?password=${password}&mobilenumber=${mobileNumber}`).then((responce)=>{
+   await  fetch(`https://bcs-world-6aen.vercel.app/login?password=${password}&mobilenumber=${mobileNumber}`).then((responce)=>{
          return responce.json()
     }).then((result)=>{
           if(result.message === "not find"){
